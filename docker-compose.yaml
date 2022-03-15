@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  app-desafio:
+    container_name: app-desafio
+    build: .
+    env_file:
+    - app-desafio.env
+    ports:
+      - 80:5000
