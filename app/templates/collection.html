@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mostrar Imagens</title>
+  </head>
+  <body>
+    <div class="content">
+        <div>
+          <h3>Imagens do Bucket S3:</h3>
+          <ul>
+            {% for item in contents %}
+              <li>
+                <img src={{ item }} style="width: 250px">
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
+
